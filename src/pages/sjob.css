@@ -1,0 +1,189 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4338ca; /* indigo-700 */
+  border-bottom: 2px solid #6366f1; /* indigo-500 */
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: #111827; /* dark gray */
+  color: white;
+}
+
+/* Back Link */
+.back-link {
+  color: #6366f1; /* indigo-500 */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.back-link:hover {
+  color: #4f46e5; /* indigo-600 */
+}
+
+/* Job Section */
+.job-section {
+  background-color: #eef2ff; /* indigo-50 */
+  padding: 40px 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 70% 30%;
+  }
+}
+
+/* Cards */
+.job-card,
+.job-description-card,
+.sidebar-card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.job-type,
+.job-location p {
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 16px;
+}
+
+.job-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.job-location {
+  display: flex;
+  align-items: center;
+  color: #c2410c; /* orange-700 */
+  gap: 6px;
+}
+
+/* Sidebar */
+.section-title {
+  color: #4338ca; /* indigo-800 */
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.company-name {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.company-info {
+  margin: 10px 0;
+}
+
+.contact-label {
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.contact-info {
+  background-color: #e0e7ff; /* indigo-100 */
+  padding: 8px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* Buttons */
+.btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-edit {
+  background-color: #6366f1; /* indigo-500 */
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #4f46e5; /* indigo-600 */
+}
+
+.btn-delete {
+  background-color: #ef4444; /* red-500 */
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626; /* red-600 */
+}
